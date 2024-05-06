@@ -7,8 +7,8 @@ class TaskListView {
         let taskList = document.querySelector('#task-list');
         taskList.innerHTML = '';
         tasks.forEach(task => {
-            let taskElement = document.createElement('li');
-            taskElement.textContent = task.name;
+            let taskElement = document.createElement('li'); // <li></li>
+            taskElement.textContent = task.name; // <li>Task 1</li>
             taskList.appendChild(taskElement);
         });
     }

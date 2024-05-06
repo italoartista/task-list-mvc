@@ -6,6 +6,7 @@ class Task {
         this.priority = priority;
         this.project = project;
         this.creationDate = new Date();
+        console.log(this)
     }
     setName(name) {
         this.name = name;
@@ -14,3 +15,5 @@ class Task {
 }
 
 export { Task };
+
+let name = 'Task 1';

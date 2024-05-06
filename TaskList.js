@@ -1,11 +1,12 @@
-import { Task } from './Task.js';
 
 class TaskList { 
-    constructor() {
+    constructor(name) {
+        this.name = name
         this.tasks = [];
     }
     addTask(task) {
         this.tasks.push(task);
+        console.log(this)
     }
     removeTask(task) {
         let index = this.tasks.indexOf(task);
